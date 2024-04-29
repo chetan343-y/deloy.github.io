@@ -2,24 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
 .dropdown{
     display: inline-block;
 }
 .dropdown .button{
     background-color: hsl(0, 38%, 58%);
-    color:white;
+    color:rgb(16, 15, 15);
     border:none;
     padding: 10px 15px;
     cursor: pointer;
 }
 .dropdown a{
     display: block;
-    color: rgb(251, 250, 249);
-    text-decoration: none;
- font-size:small;
- font-weight: 200;
- font-family: monospace;
- margin-top: 35%;
+    color: rgb(10, 10, 10);
+  
     padding: 10px 5px;
 }
 .dropdown .content{
@@ -27,52 +24,18 @@
     position: absolute;
     background-color: #faac5e ;
 
-    min-width:100%;
+    min-width:20%;
     box-shadow: 1px 1px hsla(0, 0%, 0%, 0.8);
 
 }
 .dropdown:hover .content{
-    display: block;
+    display:block;
 }
 .dropdown:hover .button{
-    color: orangered;
+    color: rgb(255, 162, 21);
 }
 .dropdown a:hover{
-    color: rgb(14, 7, 1);
-}
-.helo{
-    margin-left: 15%;
-    float: left;
-}
-nav{
-    display:flex;
-    background-color: rgb(255, 130, 34);
-    height: 90px;
-    width: 100%;
-    align-items: center;
-}
-.logo{
-    margin-top: 0;
-    display: flex;
-    height:90px;
-    width: 30%;
-    margin-left: 1%;
-}
-nav ul{
-    color: white;
-    align-items: center;
-    display: flex;
-    margin-left: 15%;
-    gap: 45px;
-}
-nav ul a{
-    color: white;
-    text-decoration: none;
-  text-align: left;
-    gap: 10px;
-}
-nav ul li{
-    list-style: none;
+    color: rgb(2, 2, 2);
 }
 .fix{  display: block;
     margin-left: auto;
@@ -108,14 +71,14 @@ nav ul li{
     background-image: url(/Project!/img/breadcrumbs.jpg);
 }
 
-header {
+.header1 {
     padding: 10px 0;
     text-align: center;
     position: relative;
 }
 
 /* Style for the line effect */
-header::after {
+.header1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -128,7 +91,7 @@ header::after {
 }
 
 /* Hover effect */
-header:hover::after {
+.header1:hover::after {
     width: 100%;
 }
 .fb:hover{
@@ -162,4 +125,3 @@ font-size: 160%;
     list-style: none;
     float: right;
 }
-  

@@ -5,58 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="/Project!/css/styley.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="/Project!/css/imagescroll.css">
-        <link rel="stylesheet" href="/Project!/css/media.css">
-        <link rel="stylesheet" href="/Project!/css/main.css">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Project!/css/imagescroll.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="/Project!/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel=" shortcut icon" type="image/x-icon" href="/Project!/img/WhatsApp_Image_2024-04-02_at_20.22.17_fd8dbc47-removebg-preview.png" alt="photo">
     <title>Pranav Paricharak</title>
-    
-</head>
+    <style>
+      .preloader {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          z-index: 9999;
+      }
+  
+      .preloader img {
+          max-width: 100px;
+      }
+  </style>
+    </head>
+  <body >  
+      <div class="preloader">
+          <img src="/Project!\img\WhatsApp_Image_2024-04-02_at_20.22.17_fd8dbc47-removebg-preview.png" alt="Preloader Image">
+      </div>
+  
+     
+      <script>
+          // Simulating loading delay for demonstration purpose
+          setTimeout(function () {
+              document.querySelector('.preloader').style.display = 'none';
+          }, 3000); // Change the time according to your loading time
+      </script>
 
-<body>
-    <div id="preloader"></div>
+    <header class="bg-[#f2a93b]">
+      <nav class="flex items-center justify-between px-12 h-16 lg:gap-8  ">
+          <a href="/index1.html" class="text-2xl font-bold px-2 py-1  whitespace-nowrap"> <img src="/Project!/img/791272-removebg-preview.png"  class="lg:w-26 lg:h-26 w-26 h-10 mx-2 mt-4 mb-4 lg:mt-4 lg:mb-4 " alt="logo">
+          </a>
 
-    <nav class=" bg-fixed navbar-expand-lg ">
-       
-      <a class="navbar-brand mt-0 ml-3" href="#info">
-        <img src="/Project!/img/791272-removebg-preview.png" width="150%" height="150%" alt="logo">
-      
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <ul>
-        <li><li ><div class="dropdown"><a href="/Project!/index.html" aria-current="page">Home</a></div></li>
-        <li><div class="dropdown"><a href="#">About Him</a>
-          <div class="content">
-              <a href="/Project!/htmlcomponent/biosketch.html">Biosketch</a>
-   <a href="/Project!/htmlcomponent/galance.html">Pranav Paricharak At A Glance</a>
+          <div class="dropdown-menu absolute -top-full left-0 max-lg:bg-[#f7f7f7] w-full  flex flex-col gap-6 items-center py-2 text-lg  lg:static lg:flex-row lg:justify-between" >
+              <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                  <li class="hover:text-orange-400"><a href="/index1.html" aria-current="page">Home</a></li>
+                  <li class="hover:text-orange-400 whitespace-nowrap" ><div class="dropdown"><a href="#">About Him</a>
+                      <div class="content">
+                          <a href="/Project!/htmlcomponent/biosketch.html">Biosketch</a>
+                       <a href="/Project!/htmlcomponent/galance.html">Pranav Paricharak At A Glance</a>
+                      </div>
+                      </div></li>
+                  <li class="hover:text-orange-400"><div class="dropdown"><a href="#">News &#038; Events</a>
+                      <div class="content">
+                              <a href="/Project!/eventcalendar-responsive-month-viewdemo/eventcalendar_responsive-month-view.html">Keep up with Pranav Paricharak</a></div></li>
+                  <li class="hover:text-orange-400"><div class="dropdown" ><a href="/Project!/htmlcomponent/Mediacoveraage.html">Media Coverage</a>
+                  </div></li>
+                  <li class="hover:text-orange-400"><div class="dropdown"><a href="/Project!/htmlcomponent/stock_image.html">Stock Images</a></div></li>
+                  <li class="hover:text-orange-400"><div class="dropdown"><a href="/Project!/htmlcomponent/press-room.html">Press Room</a></div></li>
+                  <li class="hover:text-orange-400"><div class="dropdown"><a href="/Project!/htmlcomponent/Contact_us.html">Contact Us </a></div></li>
+                         </ul>
+                         <p class="text-center flex space-y-4 justify-center">
+                          <a href="/Project!/htmlcomponent/Sstay_in_touch.html">
+                              <img src="/Project!/img/image.png" class="w-24 h-18 lg:w-48 lg:h-38 mb-2" alt="Join #TeamDevendra">
+                          </a>
+                      </p>
+                         
           </div>
+          
+          <div class="toggle-button lg:hidden">
+              <i class="fa-solid fa-bars fa-lg"></i>
           </div>
-        </li>
-        <li><div class="dropdown"><a href="#">News &#038; Events</a>
-            <div class="content">
-                    <a href="/Project!/eventcalendar-responsive-month-viewdemo/eventcalendar_responsive-month-view.html">Keep up with Pranav Paricharak</a></li>
-                    <div class="dropdown" ><a href="/Project!/htmlcomponent/Mediacoveraage.html">Media Coverage</a>
-                    </div>
-                    <!-- <div class="dropdown"><a href="#">Highlights</a>
-                    <div class="content">
-                    <a href="/Project!/htmlcomponent/japan_tour.html">Japan Tour</a>
-                </div> </div> -->
-        </li>
-        <li><div class="dropdown"><a href="/Project!/htmlcomponent/stock_image.html">Stock Images</a></div></li>
-        <li><div class="dropdown"><a href="/Project!/htmlcomponent/press-room.html">Press Room</a></div></li>
-        <!-- <li><div class="dropdown"><a href="/Project!/htmlcomponent/Winter.html">Winter Session 2023</a></div></li> -->
-        <li><div class="dropdown"><a href="/Project!/htmlcomponent/Contact_us.html">Contact Us </a></div></li>
-    </ul>         <a href="/Project!/htmlcomponent/Sstay_in_touch.html" >
-        <img src="/Project!/img/image.png" class="helo" alt="Join #TeamDevendra" width="50%" height="50%"> </a> 
- 
-</nav>
+      </nav>
+  </header>
+
+
 
     <section >
         <div class="flex h-5/6  px-24 py-24 justify-center text-xl popo">
@@ -107,33 +135,42 @@
   <!--Footer of website  -->
   <footer class="popo" >
     <div class="flex flex-col space-y-4">
-        <h1 class="text-white mt-4 text-5xl mp-1 text-center"> Join #TeamPranav</h1>
-       <p class="text-center text-white ">After ages, Maharashtra has found a leader who stands at the golden intersection between tradition and futurism. As he takes a step forward for all of us, you’re welcome to join his tribe!</p>
- <p class=" text-center flex space-y-4 justify-center "><a href="/Project!/htmlcomponent/Sstay_in_touch.html" >
-        <img src="/Project!/img/image.png" height="75px" width="205px" alt="Join #TeamDevendra"  class="mb-10"> </a> </div>
- </p>
+      <h1 class="text-white mt-4 lg:text-5xl text-sm mp-1 text-center"> Join #TeamPranav</h1>
+      <p class="text-center text-white lg:text-2xl text-xs ">After ages, Maharashtra has found a leader who stands at the golden intersection between tradition and futurism. As he takes a step forward for all of us, you’re welcome to join his tribe!</p>
+      <p class="text-center flex space-y-4 justify-center">
+         <a href="/Project!/htmlcomponent/Sstay_in_touch.html">
+             <img src="/Project!/img/image.png" class="w-24 h-18 lg:w-48 lg:h-38 mb-2" alt="Join #TeamDevendra">
+         </a>
+     </p>
+     
     </div>
     <span class="  inset-x-0 bottom-0 text-center ">
        
         <ul class=" px-5 py-3 bg-slate-400 flex justify-center space-x-5 mt-auto   ml-auto ">
             <li> Copyright © 2024 Pranav Paricharak  | <span><a href="/Project!/htmlcomponent/Peivacy.html" class="hover:text-orange-400">Privacy Policy </a></span> |<span><a href="disclamer.html" class="hover:text-orange-400">Disclaimer</a></span> </li>
             <ul class="social-link bg-slate-400 flex justify-center space-x-5 mt-auto   ml-auto">
-              <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>  
-              <li><ion-icon  class="tw" name="logo-twitter"></ion-icon></li>
-              <li><ion-icon class="go" name="logo-google"></ion-icon></li>
-              <li><ion-icon class="in" name="logo-instagram"></ion-icon></li>
-            </ul>
+              <li  ><a href="https://www.facebook.com/pranav.paricharak11" ><ion-icon class="fb" name="logo-facebook"></ion-icon></a></li>  
+                      <li><a href="https://x.com/paricharakpm" ><ion-icon  class="tw" name="logo-twitter"></ion-icon></a></li>
+                      <li><a href="https://www.instagram.com/paricharakpranav?igsh=OXdubGtvazR1cjZ4" ><ion-icon class="in" name="logo-instagram"></ion-icon></a></li>
+                      </ul>
                    </ul>
     </span>
     </footer>
         
-            <script>
-                var loader=document.getElementById("preloader");
-                window.addEventListener("load",function(){
-                    loader.style.display="none";
-                })
-            </script>
+           
        
+    <script>
+      const toggleBtn= document.querySelector(".toggle-button");
+      const dropdown= document.querySelector(".dropdown-menu");
+   
+      toggleBtn.addEventListener("click",() => {
+       dropdown.classList.toggle('top-16');
+      })
+       </script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+   
    
 </body>
 </html>
